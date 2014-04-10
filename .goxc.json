@@ -1,0 +1,7 @@
+{
+	"AppName": "heartproxy",
+	"BuildConstraints": "darwin,amd64 linux,amd64",
+	"MainDirsExclude": "tls",
+	"PackageVersion": "0.0.1",
+	"ConfigVersion": "0.9"
+}
